@@ -14,3 +14,5 @@ Change Permissions:
   chmod +x run_streamlit.sh
   ```
 
+## About mongodb
+mongosh is connected to the localhost by default, you can change it manually in bot_handler.py and streamlit_app.py.
