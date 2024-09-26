@@ -1,0 +1,3 @@
+TELEGRAM_API_TOKEN = api_token_here
+ADMIN_PASSWORD = password_here
+MONGOSH_ALLOWED_COMMANDS = [write allowed mongosh commands here as python list]
