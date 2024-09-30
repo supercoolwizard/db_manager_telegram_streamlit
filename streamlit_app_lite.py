@@ -9,18 +9,7 @@ class StreamlitApp:
     def __init__(self, admin_password):
         self.admin_password = admin_password
 
-    def set_theme(self, theme):
-        with open('/Users/williamleonheart/.streamlit/config.toml', 'w') as config_file:
-            config_file.write('[theme]\n')
-            config_file.write(f'base="{theme}"\n')
-
     def main(self):
-        theme = st.sidebar.toggle("Change theme")
-        if theme:
-            self.set_theme("light")
-        else:
-            self.set_theme("dark")
-
         # Initialize admin_logged_in in session_state if not already set
         if "admin_logged_in" not in st.session_state:
             st.session_state.admin_logged_in = False
