@@ -1,3 +1,3 @@
 TELEGRAM_API_TOKEN = api_token_here
-ADMIN_PASSWORD = password_here
-MONGOSH_ALLOWED_COMMANDS = [write allowed mongosh commands here as python list]
+ADMIN_PASSWORD = 123123
+MONGOSH_ALLOWED_COMMANDS = ["show dbs", "show collections", *[f"use {i}" for i in ['admin', 'config', 'local', 'pets', 'root_db', 'school', 'test']], "db.collection.find()", "db.Others.find()", "db.Housing.find()"]
